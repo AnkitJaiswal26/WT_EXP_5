@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <form class="form" name="validate">
+            <div class="header">
+                <h3 class="title">
+                    Job Application
+                </h3>
+                <p>Please complete the form below to apply for a position with us</p>
+            </div>
+            <div class="body">
+                <div class="full_name" name="name_form_input">
+                    <label>Full Name</label>
+                    <div class="form-input">
+                        <span class="main">
+                            <input class="first_name" name="first_name" id="first_name" type="text">
+                            <span>First Name</span>
+                        </span>
+                        <span class="main">
+                            <input class="middle_name" name="middle_name" type="text">
+                            <span>Middle Name</span>
+                        </span>
+                        <span class="main">
+                            <input class="last_name" name="last_name" type="text">
+                            <span>Last Name</span>
+                        </span>
+                    </div>
+                    <div class="form-error-message" name="name_error">
+                        Enter a valid e-mail address
+                    </div>
+                </div>
+
+                <div class="birth_date">
+                    <label>Birth Date</label>
+                    <div class="form-input">
+                        <span class="main">
+                            <select class="day" name="day">
+                                <option value="0"></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <span>Day</span>
+                        </span>
+                        <span class="main">
+                            <select class="month" name="month">
+                                <option value="0"></option>
+                                <option value="1">Janauray</option>
+
+                                <option value="2">Feburary</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+
+                                <option value="8">August</option>
+                                <option value="9">Sepetember</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <span>Month</span>
+                        </span>
+                        <span class="main">
+                            <select class="year" name="year">
+                                <option value="0"></option>
+                                <option value="1">2009</option>
+                                <option value="2">2008</option>
+                                <option value="3">2007</option>
+                                <option value="4">2006</option>
+
+                                <option value="5">2005</option>
+                                <option value="6">2004</option>
+                                <option value="7">2003</option>
+                                <option value="8">2002</option>
+                                <option value="9">2001</option>
+                                <option value="10">2000</option>
+
+                                <option value="11">1999</option>
+                                <option value="12">1998</option>
+                                <option value="13">1997</option>
+                                <option value="14">1996</option>
+                                <option value="15">1997</option>
+                                <option value="16">1996</option>
+
+                                <option value="17">1995</option>
+                                <option value="18">1994</option>
+                                <option value="19">1993</option>
+                                <option value="20">1992</option>
+                                <option value="21">1991</option>
+                                <option value="22">1990</option>
+
+                                <option value="23">1989</option>
+                                <option value="24">1988</option>
+                                <option value="25">1987</option>
+                                <option value="26">1986</option>
+                                <option value="27">1985</option>
+                                <option value="28">1984</option>
+
+                                <option value="29">1983</option>
+                                <option value="30">1982</option>
+                                <option value="31">1981</option>
+                                <option value="32">1980</option>
+                            </select>
+                            <span>Year</span>
+                        </span>
+                    </div>
+                    <div class="form-error-message">
+                        Enter a valid e-mail address
+                    </div>
+                </div>
+
+                <div class="gender">
+                    <label>Gender And Marital Status</label>
+                    <div class="form-input">
+                        <span class="main">
+                            <select name="gender" class="gender_input">
+                                <option value="0"></option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                            <span>Gender</span>
+                        </span>
+                        <span class="main">
+                            <select name="marital_status" class="marital_status">
+                                <option value="0"></option>
+                                <option value="1">Married</option>
+                                <option value="2">Unmarried</option>
+                            </select>
+                            <span>Marital Status</span>
+                        </span>
+                    </div>
+                    <div class="form-error-message">
+                        Enter a valid e-mail address
+                    </div>
+                </div>
+
+                <div class="address">
+                    <label>Address</label>
+                    <div class="form-input">
+                        <span class="main">
+                            <input class="address_input address_1" name="address_1" type="text">
+                            <span>Street Address</span>
+                        </span>
+                        <span class="main">
+                            <input class="address_input" name="address_2" type="text">
+                            <span>Street Address Line 2</span>
+                        </span>
+                        <div class="inner">
+                            <span class="main_inner">
+                                <input class="address_input city" name="city" type="text">
+                                <span>City</span>
+                            </span>
+                            <span class="main_inner">
+                                <input class="address_input state" name="state" type="text">
+                                <span>State/ Province</span>
+                            </span>
+                        </div>
+                        <span class="main">
+                            <input class="address_input pincode" name="pincode" type="text">
+                            <span>Postal/ Zip Code</span>
+                        </span>
+                    </div>
+                    <div class="form-error-message">
+                        Enter a valid e-mail address
+                    </div>
+                </div>
+
+                <div class="email">
+                    <label>Email Address</label>
+                    <div class="form-input">
+                        <span class="main">
+                            <input class="email_input" name="email" type="email">
+                            <span>example@example.com</span>
+                        </span>
+                        <div class="form-error-message">
+                            Enter a valid e-mail address
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile">
+                    <label>Mobile Number</label>
+                    <div class="form-input">
+                        <span class="main">
+                            <input class="mobile_input mobile" name="mobile" type="text">
+                        </span>
+                        <div class="form-error-message">
+                            Enter a valid e-mail address
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider" data-component="divider"></div>
+
+                <div class="work_exp">
+                    <label>Education and Experience Details</label>
+                    <div class="form-input">
+                        <span class="main">
+                            <select name="qualification" class="qualification">
+                                <option value="0"></option>
+                                <option value="1">Under Graduate</option>
+                                <option value="2">Post Graduate</option>
+                                <option value="3">PhD</option>
+                            </select>
+                            <span>Qualification</span>
+                        </span>
+                        <span class="main">
+                            <select name="experience" class="experience">
+                                <option value="0"></option>
+                                <option value="1">Fresher</option>
+                                <option value="2">1 yr</option>
+                                <option value="3">2 yrs</option>
+                                <option value="4">3 yrs</option>
+                                <option value="5">4 yrs</option>
+                                <option value="6">5 yrs</option>
+                                <option value="7">more than 5 years</option>
+                            </select>
+                            <span>Work Experience</span>
+                        </span>
+                    </div>
+                    <div class="form-error-message">
+                        Enter a valid e-mail address
+                    </div>
+                </div>
+
+                <div class="expected_salary salary">
+                    <label>Expected Salary</label>
+                    <div class="form-input">
+                        <span class="main">
+                            <input class="salary_input" name="salary" type="text">
+                        </span>
+                    </div>
+                    <div class="form-error-message">
+                        Enter a valid e-mail address
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <button class="submit" onclick="return validation()">Submit</button>
+                <button class="reset" type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        function validation() {
+
+            // Validate Name
+            if (document.validate.first_name.value == "") {
+                document.querySelector('.first_name').classList.add("error");
+                document.querySelector('.full_name .form-error-message').classList.add("error");
+                document.querySelector('.full_name .form-error-message').innerHTML = "Enter First Name";
+                return false;
+            } else if (!isNaN(document.validate.first_name.value)) {
+                document.querySelector('.first_name').classList.add("error");
+                document.querySelector('.full_name .form-error-message').classList.add("error");
+                document.querySelector('.full_name .form-error-message').innerHTML = "Enter a valid First Name";
+                return false;
+            } else {
+                document.querySelector('.first_name').classList.remove("error");
+            }
+
+            if (document.validate.middle_name.value == "") {
+                document.querySelector('.middle_name').classList.add("error");
+                document.querySelector('.full_name .form-error-message').classList.add("error");
+                document.querySelector('.full_name .form-error-message').innerHTML = "Enter Middle Name";
+                return false;
+            } else if (!isNaN(document.validate.middle_name.value)) {
+                document.querySelector('.middle_name').classList.add("error");
+                document.querySelector('.full_name .form-error-message').classList.add("error");
+                document.querySelector('.full_name .form-error-message').innerHTML = "Enter a valid Middle Name";
+                return false;
+            } else {
+                document.querySelector('.middle_name').classList.remove("error");
+            }
+
+            if (document.validate.last_name.value == "") {
+                document.querySelector('.last_name').classList.add("error");
+                document.querySelector('.full_name .form-error-message').classList.add("error");
+                document.querySelector('.full_name .form-error-message').innerHTML = "Enter Last Name";
+                return false;
+            } else if (!isNaN(document.validate.last_name.value)) {
+                document.querySelector('.last_name').classList.add("error");
+                document.querySelector('.full_name .form-error-message').classList.add("error");
+                document.querySelector('.full_name .form-error-message').innerHTML = "Enter a valid Last Name";
+                return false;
+            } else {
+                document.querySelector('.last_name').classList.remove("error");
+                document.querySelector('.full_name .form-error-message').classList.remove("error");
+            }
+
+            // Validate Birth Date
+            if (document.validate.day.value == "0") {
+                document.querySelector('.day').classList.add("error");
+                document.querySelector('.birth_date .form-error-message').classList.add("error");
+                document.querySelector('.birth_date .form-error-message').innerHTML = "Enter the Day";
+                return false
+            } else {
+                document.querySelector('.day').classList.remove("error");
+            }
+
+            if (document.validate.month.value == "0") {
+                document.querySelector('.month').classList.add("error");
+                document.querySelector('.birth_date .form-error-message').classList.add("error");
+                document.querySelector('.birth_date .form-error-message').innerHTML = "Enter the Month";
+                return false
+            } else {
+                document.querySelector('.month').classList.remove("error");
+            }
+
+            if (document.validate.year.value == "0") {
+                document.querySelector('.year').classList.add("error");
+                document.querySelector('.birth_date .form-error-message').classList.add("error");
+                document.querySelector('.birth_date .form-error-message').innerHTML = "Enter the Year";
+                return false
+            } else {
+                document.querySelector('.year').classList.remove("error");
+                document.querySelector('.birth_date .form-error-message').classList.remove("error");
+            }
+
+            // Validate Gender And Marital Status
+            if (document.validate.gender.value == "0") {
+                document.querySelector('.gender_input').classList.add("error");
+                document.querySelector('.gender .form-error-message').classList.add("error");
+                document.querySelector('.gender .form-error-message').innerHTML = "Enter the Gender";
+                return false
+            } else {
+                document.querySelector('.gender_input').classList.remove("error");
+            }
+
+            if (document.validate.marital_status.value == "0") {
+                document.querySelector('.marital_status').classList.add("error");
+                document.querySelector('.gender .form-error-message').classList.add("error");
+                document.querySelector('.gender .form-error-message').innerHTML = "Enter the Marital Status";
+                return false
+            } else {
+                document.querySelector('.marital_status').classList.remove("error");
+                document.querySelector('.gender .form-error-message').classList.remove("error");
+            }
+
+            // Validate Address
+            if (document.validate.address_1.value == "") {
+                document.querySelector('.address_1').classList.add("error");
+                document.querySelector('.address .form-error-message').classList.add("error");
+                document.querySelector('.address .form-error-message').innerHTML = "Enter the address";
+                return false;
+            } else if (!isNaN(document.validate.address_1.value)) {
+                document.querySelector('.address_1').classList.add("error");
+                document.querySelector('.address .form-error-message').classList.add("error");
+                document.querySelector('.address .form-error-message').innerHTML = "Enter a valid address";
+                return false;
+            } else {
+                document.querySelector('.address_1').classList.remove("error");
+            }
+
+            if (document.validate.city.value == "") {
+                document.querySelector('.city').classList.add("error");
+                document.querySelector('.address .form-error-message').classList.add("error");
+                document.querySelector('.address .form-error-message').innerHTML = "Enter the City";
+                return false;
+            } else if (!isNaN(document.validate.city.value)) {
+                document.querySelector('.city').classList.add("error");
+                document.querySelector('.address .form-error-message').classList.add("error");
+                document.querySelector('.address .form-error-message').innerHTML = "Enter a valid City";
+                return false;
+            } else {
+                document.querySelector('.city').classList.remove("error");
+            }
+
+            if (document.validate.state.value == "") {
+                document.querySelector('.state').classList.add("error");
+                document.querySelector('.address .form-error-message').classList.add("error");
+                document.querySelector('.address .form-error-message').innerHTML = "Enter the State";
+                return false;
+            } else if (!isNaN(document.validate.state.value)) {
+                document.querySelector('.state').classList.add("error");
+                document.querySelector('.address .form-error-message').classList.add("error");
+                document.querySelector('.address .form-error-message').innerHTML = "Enter a valid State";
+                return false;
+            } else {
+                document.querySelector('.state').classList.remove("error");
+            }
+
+            if (document.validate.pincode.value == "") {
+                document.querySelector('.pincode').classList.add("error");
+                document.querySelector('.address .form-error-message').classList.add("error");
+                document.querySelector('.address .form-error-message').innerHTML = "Enter the pincode";
+                return false;
+            } else if (isNaN(document.validate.pincode.value)) {
+                document.querySelector('.pincode').classList.add("error");
+                document.querySelector('.address .form-error-message').classList.add("error");
+                document.querySelector('.address .form-error-message').innerHTML = "Enter a valid pincode";
+                return false;
+            } else if (document.validate.pincode.value.length != 6) {
+                document.querySelector('.pincode').classList.add("error");
+                document.querySelector('.address .form-error-message').classList.add("error");
+                document.querySelector('.address .form-error-message').innerHTML = "Enter a valid pincode";
+                return false;
+            } else {
+                document.querySelector('.pincode').classList.remove("error");
+                document.querySelector('.address .form-error-message').classList.remove("error");
+            }
+
+            // Validate Email
+            if (document.validate.email.value == "") {
+                document.querySelector('.email_input').classList.add("error");
+                document.querySelector('.email .form-error-message').classList.add("error");
+                document.querySelector('.email .form-error-message').innerHTML = "Enter the Email";
+                return false;
+            } else {
+                var x = document.validate.email.value;
+                var atpos = x.indexOf("@");
+                var dotpos = x.lastIndexOf(".");
+                if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+                    document.querySelector('.email_input').classList.add("error");
+                    document.querySelector('.email .form-error-message').classList.add("error");
+                    document.querySelector('.email .form-error-message').innerHTML = "Enter a valid Email";
+                    return false;
+                } else {
+                    document.querySelector('.email_input').classList.remove("error");
+                    document.querySelector('.email .form-error-message').classList.remove("error");
+                }
+            }
+
+            // Validate Mobile Number
+            if (document.validate.mobile.value == "") {
+                document.querySelector('.mobile_input').classList.add("error");
+                document.querySelector('.mobile .form-error-message').classList.add("error");
+                document.querySelector('.mobile .form-error-message').innerHTML = "Enter the Mobile Number";
+                return false
+            } else if (isNaN(document.validate.mobile.value) || document.validate.mobile.value.length != 10) {
+                document.querySelector('.mobile_input').classList.add("error");
+                document.querySelector('.mobile .form-error-message').classList.add("error");
+                document.querySelector('.mobile .form-error-message').innerHTML = "Enter a valid Mobile Number";
+                return false
+            } else {
+                document.querySelector('.mobile_input').classList.remove("error");
+                document.querySelector('.mobile .form-error-message').classList.remove("error");
+            }
+
+            // Validate Qualification And Experience
+            if (document.validate.qualification.value == "0") {
+                document.querySelector('.qualification').classList.add("error");
+                document.querySelector('.work_exp .form-error-message').classList.add("error");
+                document.querySelector('.work_exp .form-error-message').innerHTML = "Enter the Qualification";
+                return false
+            } else {
+                document.querySelector('.qualification').classList.remove("error");
+                document.querySelector('.work_exp .form-error-message').classList.remove("error");
+            }
+
+            if (document.validate.experience.value == "0") {
+                document.querySelector('.experience').classList.add("error");
+                document.querySelector('.work_exp .form-error-message').classList.add("error");
+                document.querySelector('.work_exp .form-error-message').innerHTML = "Enter the Experience";
+                return false
+            } else {
+                document.querySelector('.qualification').classList.remove("error");
+                document.querySelector('.work_exp .form-error-message').classList.remove("error");
+            }
+
+            // Validate Salary
+            if (document.validate.salary.value == "") {
+                document.querySelector('.salary_input').classList.add("error");
+                document.querySelector('.salary .form-error-message').classList.add("error");
+                document.querySelector('.salary .form-error-message').innerHTML = "Enter the Salary";
+                return false
+            } else if (isNaN(document.validate.salary.value)) {
+                document.querySelector('.salary_input').classList.add("error");
+                document.querySelector('.salary .form-error-message').classList.add("error");
+                document.querySelector('.salary .form-error-message').innerHTML = "Enter a valid Salary";
+                return false
+            }
+        }
+    </script>
+
+</body>
+
+</html>
